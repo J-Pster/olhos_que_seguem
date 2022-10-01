@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testando os Olhos que seguem</title>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background-color: rgb(75, 75, 75);
+      color: #fff;
+      padding: 0;
+      margin: 0;
+    }
+
+    main {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .eye {
+      width: 40px;
+    }
+
+    #eyes, #eyes img {
+      position: absolute;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 20px 10px 5px 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Calculando o angulo entre o mouse e os olhos</h1>
+  <main>
+    <img id="morty" src="morty.png">
+    <div id="eyes">
+      <img class="eye" src="eye.png" style="top: 101px; right: 25px;">
+      <img class="eye" src="eye.png" style="top: 123px; right: 139px;">
+      <img class="eye" src="eye.png" style="top: -139px; right: -127px;">
+      <img class="eye" src="eye.png" style="top: -144px; right: -234px;">
+    </div>
+  </main>
+  
+</body>
+</html>
